@@ -1,0 +1,462 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: "Myanmar Text", sans-serif;
+}
+
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: url("images/bg_main.jpg");
+    background-size: cover;
+}
+
+.nav{
+    width: 1100px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.logo{
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 1.5px;
+}
+
+.nav .menu{
+    width: 45%;
+}
+
+.nav .menu ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav .menu ul li{
+    list-style: none;
+    transition: 0.4s all ease;
+}
+
+.nav .menu .active{
+    color: red;
+}
+
+
+.nav .menu ul li:hover{
+    transition: 0.4s all ease;
+}
+
+.nav .menu ul li:nth-of-type(1)::after{
+    content: '';
+    position: absolute;
+    margin-left: 603px;
+    margin-bottom: 35px;
+    width: 5%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: -1px;
+    left: 0;
+    background-color: #0051ff;
+    transform-origin: bottom left;
+    transition: 0.4s all ease;
+}
+
+.nav .menu ul li:nth-of-type(2)::after{
+    content: '';
+    position: absolute;
+    margin-left: 698px;
+    margin-bottom: 35px;
+    width: 7%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: -1px;
+    left: 0;
+    background-color: #0051ff;
+    transform-origin: bottom left;
+    transition: 0.4s all ease;
+}
+
+.nav .menu ul li:nth-of-type(3)::after{
+    content: '';
+    position: absolute;
+    margin-left: 815px;
+    margin-bottom: 35px;
+    width: 7%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: -1px;
+    left: 0;
+    background-color: #0051ff;
+    transform-origin: bottom left;
+    transition: 0.4s all ease;
+}
+
+.nav .menu ul li:nth-of-type(4)::after{
+    content: '';
+    position: absolute;
+    margin-left: 935px;
+    margin-bottom: 35px;
+    width: 7%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: -1px;
+    left: 0;
+    background-color: #0051ff;
+    transform-origin: bottom left;
+    transition: 0.4s all ease;
+}
+
+
+.nav .menu ul li:nth-of-type(5)::after{
+    content: '';
+    position: absolute;
+    margin-left: 1056px;
+    margin-bottom: 35px;
+    width: 4%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: -1px;
+    left: 0;
+    background-color: #0051ff;
+    transform-origin: bottom left;
+    transition: 0.4s all ease;
+}
+
+.nav .menu ul li:hover::after{
+    transform: scaleX(1);
+}
+
+
+
+.nav .menu ul li a{
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: white;
+    text-decoration: none;
+}
+
+.banner > div p{
+    color: white;
+    position: absolute;
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-top: 475px;
+    margin-left: 990px;
+}
+
+.banner div:nth-of-type(2){
+    position: absolute;
+    margin-top: 510px;
+    margin-left: 990px;
+}
+
+video{
+    border-radius: 5px;
+}
+
+
+.wrapper{
+    width: 100%;
+    height: 100vh;
+    background: #DC052D;
+}
+
+.nav .menu .active1{
+    color: #0066B2;
+}
+
+#history{
+    display: inline-block;
+    margin-top: 100px;
+}
+
+#history .p{
+    border: 2px solid black;
+    border-radius: 15px;
+    background: wheat;
+    width: 50%;
+    margin-left: 30px;
+}
+
+#history p{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+}
+
+#history figure{
+    margin-top: -320px;
+    position: absolute;
+    margin-left: 760px;
+}
+
+figcaption{
+    color: wheat;
+    text-align: center;
+}
+
+#history .secondP{
+    width: 50%;
+    float: right;
+    margin-right: 73px;
+    margin-top: 15px;
+    background: wheat;
+    border-radius: 15px;
+    border: 2px solid black;
+}
+
+#first_winners{
+     background-image: url("images/first_winners.jpg");
+    background-size: 240px;
+    border-radius: 4px;
+    width: 300px;
+    height: 230px;
+    margin-left: 30px;
+    margin-top: 16px;
+    background-repeat: no-repeat;
+}
+
+#treble_winners{
+    position: absolute;
+    background-image: url("images/treble.jpg");
+    border-radius: 4px;
+    background-size: 310px;
+    width: 300px;
+    height: 230px;
+    margin-left: 270px;
+    margin-top: -230px;
+    background-repeat: no-repeat;
+}
+
+
+.wrapper-stadium{
+    background-image: url("images/allianz.jpg");
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+}
+
+.wrapper-stadium ul:nth-of-type(1){
+    margin-top: 100px;
+    margin-right: 120px;
+    float: right;
+}
+
+.wrapper-stadium ul:nth-of-type(1) li{
+    list-style-image: url("images/ball.jpg");
+}
+
+.wrapper-stadium ul:nth-of-type(2){
+    margin-left: 60px;
+    margin-top: 320px;
+    position: absolute;
+}
+
+.wrapper-stadium ul:nth-of-type(2) li{
+    color: white;
+    list-style-image: url("images/true.png");
+}
+
+.wrapper-stadium ul li:hover {
+    text-decoration: underline dotted #DC052D;
+}
+
+#history a{
+    position: absolute;
+    font-weight: bold;
+    background-color: #0066B2;
+    text-decoration: none;
+    color: white;
+    padding-bottom: 2px;
+    padding-top: 7px;
+    padding-left: 8px;
+    margin-top: -48px;
+    margin-left: 1150px;
+    padding-right: 8px;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+#history img{
+    border-radius: 7px;
+}
+
+.wrapper-stadium a{
+    display: inline-block;
+    font-weight: bold;
+    background-color: #DC052D;
+    text-decoration: none;
+    color: white;
+    padding-bottom: 2px;
+    padding-top: 7px;
+    padding-left: 8px;
+    margin-top: 400px;
+    margin-left: 1200px;
+    padding-right: 8px;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+#gerdmuller{
+    width: 220px;
+    position: absolute;
+    margin-top: 120px;
+    margin-left: 40px;
+    border-radius: 5px;
+    border: 2px solid white;
+    background-color: white;
+}
+
+.wrapper-leg{
+    width: 100%;
+    height: 100vh;
+    background: #DC052D;
+}
+
+.wrapper-leg p{
+    text-align: center;
+    margin-top: -13px;
+    font-weight: bold;
+}
+
+.wrapper-leg ul{
+    margin-left: 26px;
+    font-size: 13px;
+}
+
+.wrapper-leg ul li{
+    list-style-image: url("images/true.png");
+}
+
+
+#lotarmatheus{
+    width: 220px;
+    position: absolute;
+    margin-top: 120px;
+    margin-left: 310px;
+    border-radius: 5px;
+    border: 2px solid white;
+    background-color: white;
+}
+
+#lotarmatheus ul li{
+    padding-bottom: 5px;
+}
+
+#rummenige{
+    width: 220px;
+    position: absolute;
+    margin-top: 120px;
+    margin-left: 570px;
+    border-radius: 5px;
+    border: 2px solid white;
+    background-color: white;
+}
+
+
+#uli{
+    width: 220px;
+    position: absolute;
+    margin-top: 120px;
+    margin-left: 830px;
+    border-radius: 5px;
+    border: 2px solid white;
+    background-color: white;
+}
+
+#uli ul li{
+    padding-bottom: 8px;
+}
+
+
+#beckenbauer{
+    width: 220px;
+    position: absolute;
+    margin-top: 120px;
+    margin-left: 1100px;
+    border-radius: 5px;
+    border: 2px solid white;
+    background-color: white;
+}
+
+#beckenbauer ul li{
+    padding-bottom: 5px;
+}
+
+#alegends{
+    display: inline-block;
+    font-weight: bold;
+    background-color: #0066B2;
+    text-decoration: none;
+    color: white;
+    padding-bottom: 2px;
+    padding-top: 7px;
+    padding-left: 80px;
+    margin-top: 590px;
+    margin-left: 41%;
+    padding-right: 80px;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+
+.wrapper-fans{
+    background-image: url("images/fans-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 100vh;
+}
+
+#fanClubs{
+    font-weight: bold;
+    width: 40%;
+    color: wheat;
+    padding-left: 80px;
+    padding-top: 230px;
+
+}
+
+#ultras{
+    font-weight: bold;
+    width: 30%;
+    color: black;
+    padding-left: 850px;
+}
+
+#tura{
+    width: 30%;
+    font-weight: bold;
+    padding-left: 80px;
+    padding-top: 30px;
+    color: black;
+}
+
+#tura a{
+    text-decoration: none;
+    color: lightskyblue;
+}
+
+#ultrasLogo{
+    background-image: url("images/ultras.jpg");
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    border-radius: 102px;
+    margin-left: 1000px;
+    margin-top: -10px;
+    background-repeat: no-repeat;
+}
